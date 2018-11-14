@@ -10,7 +10,7 @@ namespace xmpush;
 
 
 class Constants {
-    public static $domain = 'https://api.xmpush.xiaomi.com';
+    public static $domain = 'https://api.xmpush.global.xiaomi.com';
     public static $comma = ',';
     public static $multi_topic_split = ';$;';
     public static $packageName = '';
@@ -74,7 +74,7 @@ class Constants {
      */
     const HOST_EMQ = "emq.xmpush.xiaomi.com";
     const HOST_SANDBOX = "sandbox.xmpush.xiaomi.com";
-    const HOST_PRODUCTION = "api.xmpush.xiaomi.com";
+    const HOST_PRODUCTION = "api.xmpush.global.xiaomi.com";
     const HOST_PRODUCTION_B1 = "lg.api.xmpush.xiaomi.com";
     const HOST_PRODUCTION_B2 = "c3.api.xmpush.xiaomi.com";
     const HOST_PRODUCTION_FEEDBACK = "feedback.xmpush.xiaomi.com";
@@ -97,7 +97,7 @@ class Constants {
     }
 
     public static function useOfficial() {
-        self::$domain = 'https://api.xmpush.xiaomi.com';
+        self::$domain = 'https://api.xmpush.global.xiaomi.com';
         self::$sandbox = false;
         self::$host = null;
     }
